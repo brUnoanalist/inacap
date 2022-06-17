@@ -1,19 +1,19 @@
 $(document).ready(function(){
-let bandas = localStorage.getItem("token");
-console.log(bandas)
-   
+    
+   alert(variable)
 
 })
-function Token(){
+function bandas(variable){
     
          
     $.ajax({
+        
         type:'GET',
-        url:"https://www.codigo-alfa.cl/Api/getBandas/"+bandas,
+        url:"https://www.codigo-alfa.cl/Api/getBandas/"+variable,
         data: {},
         dataType:"json",
         success:function(data){
-            console.log(data.token)    
+            console.log('success'.data)    
             
             
 
@@ -22,4 +22,4 @@ function Token(){
         }
     })
     }
-Token()
+bandas()

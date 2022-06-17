@@ -15,10 +15,10 @@ function Token(){
         success:function(data){
             
             console.log(data.token) 
-            localStorage.setItem("token", data.token);
+            localStorage.setItem("key", data.token);
 
-            let variable = localStorage.getItem("token");
-            console.log(variable)
+            let variable = localStorage.getItem("key");
+            alert(variable)
             
 
             
@@ -27,4 +27,3 @@ function Token(){
     })
     }
 Token()
-
